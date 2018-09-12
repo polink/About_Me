@@ -19,13 +19,16 @@
 
     <script>
         var userName = prompt('Welcome to my site, what is your name?');
+            console.log(userName);
 
-        var bouldering = prompt('Did Karl recently try out bouldering?');
+        var bouldering = prompt('Howdy ' +userName+ '. Did Karl recently try out bouldering?');
 
         if(bouldering === 'yes' || bouldering === 'yee'){
             alert('good job! yes, I did recently get a membership to Stone Gardens.')
-        } else {
+        } else if (bouldering ==='no'){
             alert("yeah that's not the right answer.")
+        } else {
+            alert("it's a simple yes or no.")
         }
     </script>
 </body>
