@@ -14,7 +14,10 @@
 
     <ol> 
         <li>Did Karl recently try out bouldering? : Yes</li>
-        <li>What kind of pet would Karl like to get soon?</li>
+        <li>What kind of pet would Karl like to get soon? : A Cat!</li>
+        <li>What University did Karl go to? : UW</li>
+        <li>What city was Karl born in? : Los Angeles</li>
+        <li>What is Karl's favorite color? : Orange</li>
     </ol>
 
     <script>
@@ -35,25 +38,33 @@
         var kitty = prompt('What kind of pet would Karl like to get in the next year?'); //Question TWO
             console.log(kitty);
 
-        if(kitty === 'cat' || kitty === 'kitty'){
+        if(kitty.toLowerCase() === 'cat' || kitty.toLowerCase() === 'kitty'){
             alert('Yes indeedy, Karl wants to get a kitty!');
-        } else if (kitty === 'dog') {
+        } else if (kitty.toLowerCase() === 'dog') {
             alert('That is clearly not a cat. Karl wants a cat.')
         } else {
-            alert('That animal is cool, but Karl wants a cat.')
+            alert(kitty +'s are cool, but Karl wants a cat.')
         }
 
         var skoo = prompt('What University did Karl go to?'); //Question THREE
 
-        if (skoo === 'UW' || skoo === 'University of Washington'){
+        if (skoo.toLowerCase() === 'UW' || skoo.toLowerCase() === 'University of Washington'){
             alert("You're right, Karl is a proud Husky!");
-        } else if (skoo === 'WSU' || skoo === 'Washington State University'){
+        } else if (skoo.toLowerCase() === 'WSU' || skoo.toLowerCase() === 'Washington State University'){
             alert("That's very funny. Karl went to UW.");
         } else {
             alert('That is not the school that I went to.')
         }
 
         var homeTown = prompt('What city was Karl born in?'); //Question FOUR
+
+        switch (homeTown) {
+
+            case 'Los Angeles':
+                alert("That is the correct city!");
+            default:
+                alert("Please enter something.");
+        }
 
         var color = prompt("What is Karl's favorite color?"); //Question FIVE
 
