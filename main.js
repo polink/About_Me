@@ -29,10 +29,10 @@ if(kitty.toLowerCase() === 'cat' || kitty.toLowerCase() === 'kitty'){
 var skoo = prompt('What University did Karl go to?'); //Question THREE
 console.log(skoo);
 
-if(skoo === 'uw' || skoo === 'university of washington'){
+if(skoo.toLowerCase() === 'uw' || skoo.toLowerCase() === 'university of washington'){
   alert('You\'re right, Karl is a proud Husky!');
 } else if (skoo.toLowerCase() === 'wsu'|| skoo.toLowerCase() === 'washington state university'){
-  alert('That\'s very funny. Karl went to UW.');*/
+  alert('That\'s very funny. Karl went to UW.');
 } else {
   alert('That is not the school that I went to.');
 }
@@ -40,10 +40,19 @@ if(skoo === 'uw' || skoo === 'university of washington'){
 var homeTown = prompt('What city was Karl born in?'); //Question FOUR
 console.log(homeTown);
 
-switch (homeTown) {
+switch (homeTown.toLowerCase()) {
 
-case 'Los Angeles':
+case 'los angeles':
   alert('That is the correct city!');
+  break;
+case 'seattle':
+  alert('I\'ve lived here for almost 25 years, but I wasn\'t born here!');
+  break;
+case 'renton':
+  alert('That\'s where my family is!');
+  break;
+case 'phoenix':
+  alert('Now you\'re just guessing.');
   break;
 default:
   alert('Please enter something.');
@@ -52,3 +61,7 @@ default:
 
 var color = prompt('What is Karl\'s favorite color?'); //Question FIVE
 console.log(color);
+
+while (color.toLowerCase() !=='orange'){
+  color = prompt('Please try again!');
+}

@@ -4,3 +4,20 @@
 body {
     font-family: sans-serif;
 }
+h1 {
+    color: rgb(255,255,255);
+}
+div.Qs{
+    text-align:right;
+    width: 440px;   
+}
+ol {
+    border: 3px outset; 
+    width: 400px;
+    background-color: white;
+    text-align: right;
+}
+li {
+    background-color: white;
+    text-align: left;
+}
