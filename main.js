@@ -3,7 +3,7 @@
 var userName = prompt('Welcome to my site, what is your name?');
 console.log(userName);
 
-/*
+
 var bouldering = prompt('Howdy ' +userName+ '. Did Karl recently try out bouldering?'); //Question ONE
 console.log(bouldering);
 
@@ -25,13 +25,13 @@ if(kitty.toLowerCase() === 'cat' || kitty.toLowerCase() === 'kitty'){
 } else {
   alert(kitty +'s are cool, but Karl wants a cat.');
 }
-*/
+
 var skoo = prompt('What University did Karl go to?'); //Question THREE
 console.log(skoo);
 
-if(skoo === 'UW' || skoo === 'University of Washington'){
+if(skoo === 'uw' || skoo === 'university of washington'){
   alert('You\'re right, Karl is a proud Husky!');
-/*} else if (skoo.toLowerCase() === 'WSU'/*|| skoo.toLowerCase() === 'Washington State University'){
+} else if (skoo.toLowerCase() === 'wsu'|| skoo.toLowerCase() === 'washington state university'){
   alert('That\'s very funny. Karl went to UW.');*/
 } else {
   alert('That is not the school that I went to.');
