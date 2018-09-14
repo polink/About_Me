@@ -29,7 +29,7 @@ if(kitty.toLowerCase() === 'cat' || kitty.toLowerCase() === 'kitty'){
 var skoo = prompt('What University did Karl go to?'); //Question THREE
 console.log(skoo);
 
-if(skoo.toLowerCase() === 'UW' || skoo.toLowerCase() === 'University of Washington'){
+if(skoo === 'UW' || skoo === 'University of Washington'){
   alert('You\'re right, Karl is a proud Husky!');
 /*} else if (skoo.toLowerCase() === 'WSU'/*|| skoo.toLowerCase() === 'Washington State University'){
   alert('That\'s very funny. Karl went to UW.');*/
