@@ -6,18 +6,21 @@ body {
 }
 h1 {
     color: rgb(255,255,255);
+    float: left;
 }
 div.Qs{
-    text-align:right;
     width: 440px;   
+}
+img{
+    float: right;
+    width: 200px;
 }
 ol {
     border: 3px outset; 
     width: 400px;
     background-color: white;
-    text-align: right;
+    float: left;
 }
 li {
     background-color: white;
-    text-align: left;
 }
