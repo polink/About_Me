@@ -75,17 +75,55 @@ while (color.toLowerCase() !=='orange'){
 //Sounds like a FOR loop to be able to give the user up to 4 guesses.
 //For guessing to high/low a number, it'd make sense to use an ELSE/IF, but I know there's a more elegant method.
 //BONUS: Make the question generate a random number to guess instead.
-
-var day = prompt('Now guess which day of the month I was born on! You have 4 guesses.');
+var dayAns = 24;
+for (var i = 4; i > 0; i--){
+  var iTxt = i.toString();
+  var day = prompt('Now guess which day of the month I was born on! You have 4 guesses.');
+if(day === dayAns){
+  alert('Hey thats the right answer.');
+  break;
+}else if (day > dayAns){
+  alert('That numhber is too high.');
+}else if (day < dayAns){
+  alert('Please enter a higher number.');
+}else {
+  alert('Please enter a number!');
+}
+}
+if(day !== dayAns){
+  alert('placeholder');
+}
 console.log(day);
 
 //for ()
 
 //Question SEVEN - has multiple possible correct answers stored in an array.
 //Six tries to get a correct answer - so another FOR loop?
+//rick driving
+var favGames = ['overwatch','minecraft','fortnite','titanfall','mario kart','mega man'];
+var ansCorrect = false;
+var guessCount = 6;
+do {
+  
+  var gamesAnswer = prompt('Guess one of my favorite games');
+for(var i = 0; i < favGames.length; i++){
+    if(favGames[i] === gamesAnswer){
+      ansCorrect = true;
+    }
+}
+if(ansCorrect){
+  alert('Correct! Overwatch, Minecraft, Fortnite, Titanfall, Mario Kart, and Mega Man are my favorite games.');
+}else {
+  alert('Nice try guess again.');
+}
+guessCount--;
 
-var q7 = prompt('[question goes here], you have six tries on this one.');
-console.log(q7);
+} while(guessCount > 0 && !ansCorrect);
+if(!ansCorrect){
+  alert('Too bad. Overwatch, Minecraft, Fortnite, Titanfall, Mario Kart, and Mega Man are my favorite games.');
+}
+
+console.log(gamesAnswer);
 
 //Final - add up the number of correct answers and display to the user.
 //BONUS: make another HTML file with the questions, and fill the answers in after the user provides answers.
