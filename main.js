@@ -42,7 +42,10 @@ console.log(homeTown);
 
 switch (homeTown.toLowerCase()) {
 
-case 'los angeles':
+case 'los angeles' || 'la':
+  alert('That is the correct city!');
+  break;
+case 'la':
   alert('That is the correct city!');
   break;
 case 'seattle':
@@ -65,3 +68,24 @@ console.log(color);
 while (color.toLowerCase() !=='orange'){
   color = prompt('Please try again!');
 }
+
+//Lab 03 Additions
+
+//Question SIX - Guess what day of the month I was born on!
+//Sounds like a FOR loop to be able to give the user up to 4 guesses.
+//For guessing to high/low a number, it'd make sense to use an ELSE/IF, but I know there's a more elegant method.
+//BONUS: Make the question generate a random number to guess instead.
+
+var day = prompt('Now guess which day of the month I was born on! You have 4 guesses.');
+console.log(day);
+
+//for ()
+
+//Question SEVEN - has multiple possible correct answers stored in an array.
+//Six tries to get a correct answer - so another FOR loop?
+
+var q7 = prompt('[question goes here], you have six tries on this one.');
+console.log(q7);
+
+//Final - add up the number of correct answers and display to the user.
+//BONUS: make another HTML file with the questions, and fill the answers in after the user provides answers.
