@@ -8,19 +8,31 @@ h1 {
     color: rgb(255,255,255);
     float: left;
 }
-div.Qs{
+#Qs{
     width: 440px;   
 }
 img{
     float: right;
     width: 200px;
 }
-ol {
+ul {
     border: 3px outset; 
     width: 400px;
     background-color: white;
     float: left;
 }
 li {
+    background-color: white;
+}
+h3 {
+    background-color: white;
+}
+#top10 {
+    border: 3px outset; 
+    width: 400px;
+    background-color: white;
+    float: left;
+}
+ol {
     background-color: white;
 }
