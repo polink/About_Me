@@ -152,10 +152,8 @@ if (!ansCorrect) {
 console.log(gamesAnswer);
 
 //Final - add up the number of correct answers and display to the user.
-<<<<<<< HEAD
+
 //BONUS: make another HTML file with the questions, and fill the answers in after the user provides answers.
-=======
 alert('You got '+numCorrect+' out of 7.');
 console.log(numCorrect);
 //BONUS: make another HTML file with the questions, and fill the answers in after the user provides answers.
->>>>>>> 60ad150ca5e64a4dbc61a499a107bc7fe62bf17d
