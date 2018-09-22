@@ -68,26 +68,26 @@ var homeTownFunc = function () {
 
   switch (homeTown.toLowerCase()) {
 
-    case 'los angeles' || 'la':
-      alert('That is the correct city!');
-      numCorrect++;
-      break;
-    case 'la':
-      alert('That is the correct city!');
-      numCorrect++;
-      break;
-    case 'seattle':
-      alert('I\'ve lived here for almost 25 years, but I wasn\'t born here!');
-      break;
-    case 'renton':
-      alert('That\'s where my family is!');
-      break;
-    case 'phoenix':
-      alert('Now you\'re just guessing.');
-      break;
-    default:
-      alert('That city is unfortunately incorrect.');
-      break;
+  case 'los angeles' || 'la':
+    alert('That is the correct city!');
+    numCorrect++;
+    break;
+  case 'la':
+    alert('That is the correct city!');
+    numCorrect++;
+    break;
+  case 'seattle':
+    alert('I\'ve lived here for almost 25 years, but I wasn\'t born here!');
+    break;
+  case 'renton':
+    alert('That\'s where my family is!');
+    break;
+  case 'phoenix':
+    alert('Now you\'re just guessing.');
+    break;
+  default:
+    alert('That city is unfortunately incorrect.');
+    break;
   }
 };
 homeTownFunc();
@@ -98,13 +98,14 @@ var clr = function () {
   do {
     var color = prompt('What is Karl\'s favorite color?');
     console.log(color);
+    if (color !== 'orange') {
+      color = prompt('Please try again!');
+    } else {
+      numCorrect++;
+    }
   } while (color.toLowerCase() !== 'orange');
 
-  if (color !== 'orange') {
-    color = prompt('Please try again!');
-  } else {
-    numCorrect++;
-  }
+  
 };
 clr();
 
@@ -134,7 +135,7 @@ var bDay = function(){
     }
   }
   if (dayNum !== dayAns) {
-    alert('placeholder');
+    alert('That\'s incorrect, let\'s move on to the next question.');
   }
   console.log(day);
 }
@@ -172,9 +173,11 @@ var allTheGames = function(){
   console.log(gamesAnswer);
 };
 allTheGames();
-//Final - add up the number of correct answers and display to the user.
 
+//BONUS: Make an array that runs through all of the functions. (my start at it below, will add in if time is available.)
+// var questions = [rocks(), kats(), univ(), homeTownFunc(), clr(), bDay(), allTheGames()];
+
+//Final - add up the number of correct answers and display to the user.
 //BONUS: make another HTML file with the questions, and fill the answers in after the user provides answers.
 alert('You got ' + numCorrect + ' out of 7.');
 console.log(numCorrect);
-//BONUS: make another HTML file with the questions, and fill the answers in after the user provides answers.
