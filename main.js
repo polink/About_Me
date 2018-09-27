@@ -100,6 +100,7 @@ var clr = function () {
     console.log(color);
     if (color !== 'orange') {
       color = alert('Please try again!');
+      break;
     } else {
       numCorrect++;
     }
