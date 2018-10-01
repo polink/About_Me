@@ -99,7 +99,7 @@ var clr = function () {
     var color = prompt('What is Karl\'s favorite color?');
     console.log(color);
     if (color !== 'orange') {
-      color = alert('Please try again!');
+      color = alert('Incorrect!');
       break;
     } else {
       numCorrect++;
